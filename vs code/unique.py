@@ -268,15 +268,243 @@ no
 a=int(input())
 """
 #100.
+"""
 name=input("enter your name ")
 age=int(input("enter your age"))
 num1=float(input("enter 1st number "))
-num2=float(input("enter 2nd number "))
+num2=float(input("enter 2nd number "))#
 num3=float(input("enter 3rd number "))
 print("Name = ", name)
 print("Current Age " , age)
 print("age after 10 years = ", age+10)
-print("sum = " ,num1+num2+num3)
-print("diffrence between num1 and num2 ", num1-num2)
-print("product of num1 and num2 = ", num1*num2)
-print("average of all 3 nums = ", (num1+num2+num3)/3)
+# print("sum = " ,num1+num2+num3)
+# print("diffrence between num1 and num2 ", num1-num2)
+# print("product of num1 and num2 = ", num1*num2)
+# print("average of all 3 nums = ", (num1+num2+num3)/3)
+# """
+# #   Shopping Bill Calculator
+# name = input("Enter customer name: ")
+# price=float(input("Enter price of the item: "))
+# quantity=int(input("Enter quantity of the item: "))
+# discount=float(input("Enter discount percentage: "))
+# total_price = price * quantity
+# discount_amount = total_price * (discount / 100)
+# final_amount = total_price - discount_amount
+# print("Customer Name:", name, "\nTotal Price:", total_price, "\nDiscount Amount:", discount_amount, "\nFinal Amount:", final_amount)
+# print("Final Amount >= 1000:", final_amount >= 1000)
+# quantity += 1
+# print("Updated Quantity:", quantity)
+# print("Updated Total Price:", price * quantity)
+# print("Updated Final Amount:", (price*quantity)-((price*quantity)*discount/100))
+# print(type(final_amount))
+# print(type(name))
+# print(type(discount_amount))
+
+        #module 2
+
+#5.
+"""
+x=int(input("enter any number"))
+if x==0:
+    print("zero")
+elif x%2==0:
+    print("even")
+else:
+    print("odd")
+"""
+#6
+# x= int(input("enter 1st no. "))
+# y= int(input("enter 2nd no. "))
+# a=x>y
+# b=x<y
+# c=(x==y)
+# print(a,"x is greater ")
+# print(b,"y is greater ")
+# print(c ," both equal")
+#7.
+
+# x= int(input("enter 1st no. "))
+# y= int(input("enter 2nd no. "))
+# z= int(input("enter 3rd no. "))
+# if x>y and x>z:
+#     print("x is greater", x)
+# elif y>z and y>x:
+#     print("y is greater",y)
+# elif z>x and z>y:
+#     print("z is greater",z)
+# else:
+#     print("all are same")
+
+# x= int(input("enter 1st no. "))
+# y= int(input("enter 2nd no. "))
+# print(x>y or y==x)
+# print(x>y and y==x)
+# print(not y==x)
+"""
+a= input("enter any alphabet")
+b=a.strip()
+if b=="a" or b=="e" or b=="i" or b=="o" or b=="u":
+    print("vowel")
+else:
+    print("consonant")        
+"""
+# 
+"""
+a=int(input("enter no. "))
+if a%3==0 and a%5==0:
+    print("divisible by 3 and 5 both")
+else:
+    print("invalid")
+
+    """
+#
+"""
+a=int(input("enter no. "))
+if (a%2==0) != (a%3==0):
+    print("True")
+else:
+    print("False")
+    """
+"""
+a=input("enter anything ")
+print(a[0])
+print(a[-1])
+print(len(a))
+if (len(a)%2)!=0:
+    b=int(len(a)/2)
+    print(a[b])
+else:
+    print(a)
+"""
+# a=input("enter anything ")
+# print(a.startswith("A") ,"\n",a.endswith("a"))
+
+# a=input("enter anything ")
+# count = 0
+# for i in a:
+#     if i ==" ":
+#         count +=1
+# print(count)
+# a=int(input("enter no."))
+# sum = 1
+# for i in range(0,a+1):
+#     sum*= i
+# print(sum)
+"""
+a=int(input("enter no."))
+for i in range (1,11):
+    print(f"{a} * {i} = {a*i}")
+"""
+
+# a=int(input("enter no."))#a=456
+# count = 0
+# while a>0:
+#     a = a//10
+#     count +=1
+# print(count)
+"""
+a=int(input("enter no. "))#a=45864
+b=str(a)
+count= 0
+for i in range (len(b)):
+    count+=1
+print(count)
+"""
+"""
+a=int(input("enter no. "))#a=456
+sum = 0
+while a>0:
+    digit= a%10
+    sum+=digit
+    a=a//10
+print(sum)
+"""
+"""
+a=int(input("enter no. "))#a=456
+while a>0:
+    digit= a%10
+    a//=10
+    print(f"{digit}", end ="")
+    """
+# a=input("enter anything")
+# b=a.count("a")
+# c=a.count("e")
+# d=a.count("i")
+# e=a.count("o")
+# f=a.count("u")
+# g=b+c+d+e+f
+# print(f"no of vowels {g}")
+# h=a.replace(" ", "")
+# print(f"no of consonants {len(h)-g}")
+# count = 0
+# for i in a:
+#     if i.isdigit():
+#         count+=1
+# print(count)
+
+# a= ["my", "name", "is" , "deepu"]
+# d="kushal kumar and vishwajeet kumar "
+# b=" ".join(a)
+# c=d.split(" ")
+# print(b)
+# print(c)
+
+# a="kusha 'ksub"
+# print(a)
+# letter =/
+
+# a=int(input("enter no."))
+# print(a>=18 and a<=65)
+# a=99
+# b=10
+# c=a
+# print(a,b)
+# a=b
+# b=c
+# print(a,b)
+
+# a="12534 "
+# print(f"{a.isdigit()}")
+# a= input()
+# b=a.split()
+# print(f"{len(b)} \n{a.upper()} \n{a.replace(" ","-")}")
+# a=input("enter ")
+# b=a[ : :-1]
+# print(f"{a==b}")
+# x = 10
+# x+= 5
+# x *= 2
+# print(x)
+# x = 10
+# if not(x > 20):
+#      print("A")
+# else:
+#      print("B")
+# a= int(input("enter"))
+# if not(a>=20 and a<=50):
+#     print("not")
+# else:
+#     print("yes")
+
+# a= True
+# b= False
+# if a== True:
+#     print("yes")
+# else:
+#     print("no")
+
+
+# a=int(input("enter no. "))
+# for i in range (a,0,-1):
+#     for j in range (1,i+1):
+#         print(j, end=" ")
+#     print()
+#fabonaachi
+a=0
+b=1
+n=int(input("enter no."))
+for i in range(0,n):
+    c=a+b
+    print(a,end=" ")
+    a=b
+    b=c
